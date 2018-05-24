@@ -1,0 +1,15 @@
+{
+  "name": "drichard.github.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./mindmaps && mkdir mindmaps && cd mindmaps-src && npm run build && cd .. && cp -r mindmaps-src/bin/* mindmaps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drichard/drichard.github.com.git"
+  },
+  "author": "David Richard",
+  "license": "ISC"
+}
