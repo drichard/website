@@ -2,7 +2,9 @@
   "name": "website",
   "version": "1.0.0",
   "scripts": {
-    "build": "rm -rf ./mindmaps && mkdir mindmaps && cd mindmaps-src && npm run build && cd .. && cp -r mindmaps-src/bin/* mindmaps"
+    "update": "cd mindmaps-src && git checkout drichard.org && git pull && cd ..",
+    "build": "rm -rf ./mindmaps && mkdir mindmaps && cd mindmaps-src && npm run build && cd .. && cp -r mindmaps-src/bin/* mindmaps",
+    "deploy": "git add . && git commit -m 'Deploy mindmaps' && git push"
   },
   "repository": {
     "type": "git",
