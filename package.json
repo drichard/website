@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "update": "cd mindmaps-src && git pull && cd ..",
-    "build": "rm -rf ./mindmaps && mkdir mindmaps && cd mindmaps-src && npm run build && cd .. && cp -r mindmaps-src/bin/* mindmaps",
+    "build": "rm -rf ./mindmaps && mkdir mindmaps && cd mindmaps-src && npm run build && cd .. && cp -r mindmaps-src/dist/* mindmaps",
     "deploy": "git add . && git commit -m 'Deploy mindmaps' && git push"
   },
   "repository": {
